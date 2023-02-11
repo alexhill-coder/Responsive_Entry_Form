@@ -1,0 +1,135 @@
+
+
+/* Alters the font of the page to my trial and error approuch of identifying the best look.*/
+h1 {
+    font-size: 2.75em;
+    margin: 1.5em 0 1em 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 1.5em 0 1em 0;
+}
+
+.text-centered {
+    color: rgba(89,88,89,255);
+    line-height: 1.3;
+    margin: 1em 2em 2em 2em;
+    letter-spacing: -0.035em;
+}
+
+.text-centered p {
+    font-size: 14pt;
+    margin: 0rem 2rem;
+}
+
+
+/* Adds a slight animated effect to the links */
+.text-centered a:hover {
+    border-bottom: 1px solid rgba(89,88,89,255);
+    font-weight: bold;
+    transition: font-weight 0.2s;
+}
+
+/* A class to limit the size the width form on larger screen and increased on smaller screens*/
+.formContainer {
+    max-width: 60vw;
+}
+
+.formContainer select{
+    width: 50%; 
+}
+
+
+/* To alter the color and animate when the user hovers over the button */
+.formContainer button, td button {
+    background-color: grey;
+    border-color: grey;
+    transition: background-color 0.2s;
+}
+
+/* To alter the delete button on the table */
+td button {
+    color: white;
+}
+
+td button:hover {
+    background-color: rgba(89,88,89,255);
+    border-color: grey;
+}
+
+/* Adds a hover effect on the table cells to indicate an actiona can be taken */
+td:hover {
+    background-color: rgba(89,88,89,255);
+    border-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+/* Due to the type of table being used this style is needed with the one above. */
+.table-striped>tbody>tr:nth-child(odd)>td:hover,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  color: white;
+  cursor: pointer;
+}
+
+/* To alter the color of button when hovering */
+.formContainer button:hover {
+    background-color: rgba(89,88,89,255);
+    border-color: grey;
+}
+
+/* To alter the font size and position on page. */
+.text-centered ul, .text-centered li {
+    font-size: 14pt;
+    margin: 0rem 2rem;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Changes the font to the selected color */
+tbody, thead {
+    color: rgba(89,88,89,255);
+}
+
+/* Changes the alternate background color font to the selected color. Can be used to alter the second background. */
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  color: rgba(89,88,89,255);
+}
+
+/* To maintain a level of asthetics and readability the fonts/cards have to be altered depending on the screen width or height. */
+@media screen and (min-width: 1450px) {
+    .text-centered p {
+        font-size: 14pt;
+    }
+}
+
+/* When the screen reaches a certain point the screen can become cluttered so fonts, margins, sizes are altered
+to accomadate this */
+@media screen and (max-width: 850px) {
+    h1 {
+        font-size: 2em;
+    }
+    .text-centered {
+        margin: .5em 1em 1em 1em;
+    }
+
+    .text-centered p {
+        font-size: 12pt;
+        margin: 0rem 0rem;
+    }
+
+    .text-centered ul, .text-centered li {
+        font-size: 12pt;
+        margin: 0rem 0rem;
+    }
+    
+    .formContainer {
+        max-width: 80vw;
+    }
+}
+
+
