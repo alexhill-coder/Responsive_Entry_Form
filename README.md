@@ -25,7 +25,7 @@ Alternatively you can check it out here on Github: [Click here to give it a try.
 <img src="https://user-images.githubusercontent.com/119125564/218272113-30950aea-2f0f-4943-b1db-007b33b3e9d7.png" alt="react app" width="40%"/>
 </p>
 
- - To add items into the table, fill in the various fields and options and click the Create New Entry butoon. 
+ - To add items into the table, fill in the various fields and options and click the Create New Entry button. 
  - To delete an entry click on the Delete in the last column on the row. 
  - To edit an entry on the element that you want to change, change the information by changing the information from the pop-up sidebar text field. Then click on the button Edit Entry.
 
